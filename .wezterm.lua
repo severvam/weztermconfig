@@ -37,7 +37,7 @@ local act = wezterm.action
 local cmd_key_mods = "CTRL|SHIFT"
 local opt_key_mods = "ALT"
 if wezterm.target_triple:find("darwin") then
-  cmd_key_mods = "CMD"
+  cmd_key_mods = "CMD|SHIFT"
   opt_key_mods = "OPT"
 end
 
