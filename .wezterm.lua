@@ -24,13 +24,15 @@ config.keys = {
   { key = 'LeftArrow', mods = 'OPT', action = act.SendKey { key = 'b', mods = 'ALT', }, },
   { key = 'RightArrow', mods = 'OPT', action = act.SendKey { key = 'f', mods = 'ALT' }, },
   { key = 'w', mods = 'CMD', action = act.CloseCurrentTab{ confirm = false }, },
-  { key = 'f', mods = 'CMD', action = act.SplitVertical { domain = 'CurrentPaneDomain' }, },
-  { key = 'd', mods = 'CMD', action = act.SplitHorizontal { domain = 'CurrentPaneDomain' }, },
-  { key = 'h', mods = 'CMD', action = act.ActivatePaneDirection 'Left', },
-  { key = 'l', mods = 'CMD', action = act.ActivatePaneDirection 'Right', },
-  { key = 'j', mods = 'CMD', action = act.ActivatePaneDirection 'Down', },
-  { key = 'k', mods = 'CMD', action = act.ActivatePaneDirection 'Up', },
+  { key = 'v', mods = 'CMD', action = act.SplitVertical { domain = 'CurrentPaneDomain' }, },
+  { key = 'h', mods = 'CMD', action = act.SplitHorizontal { domain = 'CurrentPaneDomain' }, },
+  { key = 'l', mods = 'CMD', action = act.ActivatePaneDirection 'Left', },
+  { key = 'r', mods = 'CMD', action = act.ActivatePaneDirection 'Right', },
+  { key = 'd', mods = 'CMD', action = act.ActivatePaneDirection 'Down', },
+  { key = 'u', mods = 'CMD', action = act.ActivatePaneDirection 'Up', },
   { key = 'x', mods = 'CMD', action = act.CloseCurrentPane{ confirm = false } },
+  { key = 'f', mods = 'CMD', action = wezterm.action.ActivateCopyMode, },
+  { key = 's', mods = 'CMD', action = wezterm.action.Search { CaseSensitiveString = "" }, },
 }
 
 
