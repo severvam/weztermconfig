@@ -31,8 +31,7 @@ config.keys = {
   { key = 'd', mods = 'CMD', action = act.ActivatePaneDirection 'Down', },
   { key = 'u', mods = 'CMD', action = act.ActivatePaneDirection 'Up', },
   { key = 'x', mods = 'CMD', action = act.CloseCurrentPane{ confirm = false } },
-  { key = 'f', mods = 'CMD', action = wezterm.action.ActivateCopyMode, },
-  { key = 's', mods = 'CMD', action = wezterm.action.Search { CaseSensitiveString = "" }, },
+  { key = 'f', mods = 'CMD', action = wezterm.action.Search { CaseSensitiveString = "" }, },
 }
 
 
