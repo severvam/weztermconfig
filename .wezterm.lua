@@ -53,6 +53,9 @@ config.keys = {
   { key = 'u', mods = cmd_key_mods, action = act.ActivatePaneDirection 'Up' },
   { key = 'x', mods = cmd_key_mods, action = act.CloseCurrentPane { confirm = false } },
   { key = 'f', mods = cmd_key_mods, action = wezterm.action.Search { CaseSensitiveString = "" } },
+  -- switch active tab
+  { key = '[', mods = cmd_key_mods, action = act.ActivateTabRelative(-1) },
+  { key = ']', mods = cmd_key_mods, action = act.ActivateTabRelative(1) },
 }
 
 return config
