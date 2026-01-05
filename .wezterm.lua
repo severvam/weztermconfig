@@ -44,7 +44,6 @@ end
 config.keys = {
   { key = "Enter", mods = "SHIFT", action = act.SendString "\x1b\r" },
   { key = 'LeftArrow', mods = opt_key_mods, action = act.SendKey { key = 'b', mods = 'ALT' } },
-  { key = "Enter", mods = "SHIFT", action = act.SendString "\x1b\r" },
   { key = 'RightArrow', mods = opt_key_mods, action = act.SendKey { key = 'f', mods = 'ALT' } },
   { key = 'w', mods = cmd_key_mods, action = act.CloseCurrentTab { confirm = false } },
   { key = 'v', mods = cmd_key_mods, action = act.SplitVertical { domain = 'CurrentPaneDomain' } },
