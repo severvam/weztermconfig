@@ -42,6 +42,7 @@ if wezterm.target_triple:find("darwin") then
 end
 
 config.keys = {
+  { key = "Enter", mods = "SHIFT", action = act.SendString "\x1b\r" },
   { key = 'LeftArrow', mods = opt_key_mods, action = act.SendKey { key = 'b', mods = 'ALT' } },
   { key = "Enter", mods = "SHIFT", action = act.SendString "\x1b\r" },
   { key = 'RightArrow', mods = opt_key_mods, action = act.SendKey { key = 'f', mods = 'ALT' } },
